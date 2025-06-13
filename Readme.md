@@ -17,7 +17,7 @@ This component enhances user experience by providing a contextual link to a rela
 
 ## 🎯 Use Case
 
-While Salesforce provides a **related list** to view children from a parent record, it lacks an intuitive way to **see the parent from the child** in record pages.
+While Salesforce provides a related list to view children from a parent record, it lacks an intuitive way to see the parent from the child in record pages.
 
 This component fills that gap
 
@@ -38,7 +38,7 @@ force-app/
 
 ## ⚙️ How It Works
 
-- Expects a **lookup field** on the current record that points to another SObject.
+- Expects a **lookup field** on the current record that points to another SObject (Here I used Account/Contact as child).
 - Uses `lightning/uiRecordApi` to:
   - Fetch the record ID and resolve the parent lookup reference
   - Retrieve display fields (like `Name`, `FirstName`, `LastName`, etc.)
