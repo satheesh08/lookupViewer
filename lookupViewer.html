@@ -1,0 +1,18 @@
+<template>
+    <template if:true={parentRecord}>
+        <div class="card">
+            <div class="header">Parent Record</div>
+            <div class="record-link-wrapper">
+                <a href={recordUrl} target="_blank" class="record-link" title="View Parent Record">
+                    {parentRecord}
+                    <lightning-icon icon-name="utility:chevronright" size="x-small" alternative-text="Go" class="icon"></lightning-icon>
+                </a>
+            </div>
+        </div>
+    </template>
+    <template if:true={error}>
+        <div class="card error-card">
+            <div class="error-message">{error}</div>
+        </div>
+    </template>
+</template>
